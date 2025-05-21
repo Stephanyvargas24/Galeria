@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería K-Pop</title>
+  <style>
+    body {
+      background-image: url('galaxia.gif'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border: 3px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>K-Pop Galaxy Gallery</h1>
+  <div class="gallery">
+    <a href="Galeria.php?img=the_rose.jpg"><img src="the_rose.jpg" alt="The Rose"></a>
+    <a href="Galeria.php?img=pentagon.jpg"><img src="pentagon.jpg" alt="Pentagon"></a>
+    <a href="Galeria.php?img=got7.jpg"><img src="got7.jpg" alt="GOT7"></a>
+    <a href="Galeria.php?img=bts.jpg"><img src="bts.jpg" alt="BTS"></a>
+    <a href="Galeria.php?img=txt.jpg"><img src="txt.jpg" alt="TXT"></a>
+  </div>
+</body>
+</html>
